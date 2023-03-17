@@ -1,7 +1,6 @@
 // Your Script here.
-function rot13(encryptedstring){
 
-	var lookup = {
+var lookup = {
   "A": "N",
   "B": "O",
   "C": "P",
@@ -34,6 +33,8 @@ function rot13(encryptedstring){
 
 
 
+function rot13(encryptedstring){
+	
 var decrystr= "";
 for(let i=0;i<encryptedstring.length;i++){
   if(encryptedstring.charCodeAt(i)==32){
@@ -47,3 +48,5 @@ for(let i=0;i<encryptedstring.length;i++){
  return decrystr;
 	
 }
+
+module.exports = rot13;
